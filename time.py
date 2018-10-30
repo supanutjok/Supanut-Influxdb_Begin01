@@ -13,19 +13,21 @@ import datetime as DT
 s = sched.scheduler(time.time, time.sleep)
 def do_something(sc): 
     #print ("Doing stuff...")
-    print (time.time())
+    #print (time.time())
+    millis = int(round(time.time()*0.2))
+    print (millis)
 
     seconds_since_epoch = time.time()
     DT.datetime.utcfromtimestamp(seconds_since_epoch)
     datetime.datetime.now()
     ai = DT.datetime.utcfromtimestamp(seconds_since_epoch).isoformat()
-    print(ai+"Z")
+    #print(ai+"Z")
 
 
-    print (datetime.datetime.strptime)
+    #print (datetime.datetime.strptime)
     rd = random.uniform(0, 2)
     rd2 = round(rd ,2)
-    print (rd2)
+    #print (rd2)
     
      #do your stuff
     s.enter(1, 1, do_something, (sc,))
