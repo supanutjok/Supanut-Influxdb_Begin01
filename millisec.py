@@ -62,6 +62,6 @@ def hello(*args):
     #print (time.time())
     print (random.randint(1, 100))
     #next=int(args[0])+1
-    threading.Timer(0.2, hello,[str(next)]).start()
+    threading.Timer(0.1, hello,[str(next)]).start()
 
 hello()
